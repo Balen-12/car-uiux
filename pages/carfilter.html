@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/app.css" />
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiprjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Title -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full px-10 z-[10000]">
+      <div class="rounded-full bg-white w-full flex justify-between px-8 items-center py-4">
+        <!-- Logo -->
+        <div>Logo</div>
+
+        <!-- Menu -->
+        <div>
+          <ul class="flex gap-2">
+            <li>
+              <a class="rounded-full hover:bg-lime-300 transition px-6 py-3" href=""> Home </a>
+            </li>
+            <li>
+              <a class="rounded-full hover:bg-lime-300 transition px-6 py-3" href=""> Car </a>
+            </li>
+            <li>
+              <a class="rounded-full hover:bg-lime-300 transition px-6 py-3" href=""> Company </a>
+            </li>
+            <li>
+              <a class="rounded-full hover:bg-lime-300 transition px-6 py-3" href=""> Product </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Login and Register -->
+        <div class="flex items-center gap-4">
+          <div>Login</div>
+          <div class="w-0.5 rounded-full h-8 bg-gray-900"></div>
+          <div>
+            <a href="" class="rounded-full bg-lime-300 transition px-6 py-3"> Register </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-20">
+      <!-- Filters Button -->
+      <div class="grid grid-cols-5 mt-16">
+        <button class="py-2 border-y-2 border-l-2 border-neutral-400">Filter by Prie</button>
+        <button class="py-2 border-y-2 border-x-2 border-neutral-400">Filter by Brand</button>
+        <button class="py-2 border-y-2 border-neutral-400">Filter by Model</button>
+        <button class="py-2 border-y-2 border-x-2 border-neutral-400">Filter by Date</button>
+        <button class="bg-amber-400 mx-2 font-bold">Search</button>
+      </div>
+
+      <!-- Main -->
+      <div class="grid grid-cols-5 gap-4 mt-10">
+        <!-- Car -->
+        <div class="bg-red-100">
+          <!-- Image -->
+          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+
+          <!-- Details -->
+          <div>Hello</div>
+        </div>
+
+        <!-- Car -->
+        <div class="bg-red-100">
+          <!-- Image -->
+          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+
+          <!-- Details -->
+          <div>Hello</div>
+        </div>
+
+        <!-- Car -->
+        <div class="bg-red-100">
+          <!-- Image -->
+          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+
+          <!-- Details -->
+          <div>Hello</div>
+        </div>
+
+        <!-- Car -->
+        <div class="bg-red-100">
+          <!-- Image -->
+          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+
+          <!-- Details -->
+          <div>Hello</div>
+        </div>
+
+        <!-- Car -->
+        <div class="bg-red-100">
+          <!-- Image -->
+          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+
+          <!-- Details -->
+          <div>Hello</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
