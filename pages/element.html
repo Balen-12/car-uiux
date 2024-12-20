@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/app.css" />
+    <!-- Tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiprjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {},
+        plugins: [daisyui],
+        daisyui: {
+          themes: ['light'], // Specify the light theme
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        background: #f4f4f4 !important;
+      }
+    </style>
+
+    <!-- Title -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full px-20 z-[10000]">
+      <div class="rounded-full w-full flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="../index.html" class="rounded-full transition">Logo</a>
+
+        <!-- Menu -->
+        <div>
+          <ul class="flex gap-2">
+            <li>
+              <a href="../index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+            </li>
+            <li>
+              <a href="./carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+                Car
+              </a>
+            </li>
+            <li>
+              <a href="./brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+                Company
+              </a>
+            </li>
+            <li>
+              <a href="./element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+                Product
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Login and Register -->
+        <div class="flex items-center gap-4">
+          <div>
+            <a href="./register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Register </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="px-20">
+      <!-- Main -->
+      <div>
+        <!-- All Engine -->
+        <div class="mt-6">
+          <!-- Title -->
+          <div class="text-2xl">All Engine</div>
+          <!-- Main -->
+          <div class="swiper mySwiper my-4">
+            <div class="swiper-wrapper">
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- All Oil -->
+        <div class="mt-6">
+          <!-- Title -->
+          <div class="text-2xl">All Oils</div>
+          <!-- Main -->
+          <div class="swiper mySwiper my-4">
+            <div class="swiper-wrapper">
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- One Brand -->
+              <div class="swiper-slide">
+                <!-- Image Background -->
+                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <!-- Title and Detials -->
+                <div class="absolute flex flex-col justify-between h-full w-full p-4">
+                  <!-- Title -->
+                  <div class="text-3xl text-white">Audi</div>
+                  <!-- View -->
+                  <div class="flex justify-end">
+                    <a href="/" class="bg-amber-400 p-4 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
