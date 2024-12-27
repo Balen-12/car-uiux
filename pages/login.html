@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/app.css" />
+    <!-- Tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiprjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {},
+        plugins: [daisyui],
+        daisyui: {
+          themes: ['light'], // Specify the light theme
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        background: #f4f4f4 !important;
+      }
+    </style>
+
+    <!-- Title -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid grid-cols-2 justify-center h-screen">
+      <!-- Login -->
+      <div class="flex flex-col md:col-span-1 col-span-2 justify-center md:w-[80%] w-[90%] mx-auto p-10">
+        <!-- Title -->
+        <div class="text-4xl text-center">Sign in</div>
+
+        <!-- Login -->
+        <form>
+          <!-- Email -->
+          <div>
+            <div class="mt-4 mb-2">Email</div>
+            <input
+              type="text"
+              class="bg-neutral-200 border-2 border-neutral-100 p-3 w-full rounded-md focus:outline-none focus:border-blue-400 transition duration-300"
+              placeholder="Enter Email"
+            />
+          </div>
+
+          <!-- Password -->
+          <div>
+            <div class="mt-4 mb-2">Password</div>
+            <input
+              type="text"
+              class="bg-neutral-200 border-2 border-neutral-100 p-3 w-full rounded-md focus:outline-none focus:border-blue-400 transition duration-300"
+              placeholder="Enter Password"
+            />
+          </div>
+
+          <!-- Button -->
+          <div>
+            <button class="bg-amber-300 py-4 my-6 rounded-md hover:bg-amber-500 transition w-full text-center">
+              Sign in
+            </button>
+          </div>
+
+          <!-- Forget Password -->
+          <div>
+            <a href="" class="hover:text-gray-400 transition-all">Forget your password?</a>
+          </div>
+
+          <!-- Sign in -->
+          <div class="text-center mt-4">
+            <a href="./register.html" class="hover:text-gray-400 transition-all">Sign up</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- Background -->
+      <div class="md:block hidden">
+        <!-- Go Back Home -->
+        <div class="relative">
+          <div class="absolute right-10 top-10 z-10">
+            <a href="/" class="flex justify-center items-center bg-white px-6 py-3 rounded-full"> Go Back </a>
+          </div>
+        </div>
+
+        <!-- Background Image -->
+        <img
+          class="w-full h-full object-cover brightness-50"
+          src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="background"
+        />
+      </div>
+    </div>
+  </body>
+</html>

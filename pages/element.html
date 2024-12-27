@@ -33,29 +33,29 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="w-full px-20 z-[10000]">
+    <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
         <a href="../index.html" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
-        <div>
+        <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="../index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Car
               </a>
             </li>
             <li>
-              <a href="./brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Company
               </a>
             </li>
             <li>
-              <a href="./element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
                 Product
               </a>
             </li>
@@ -65,27 +65,44 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Register </a>
+            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Main Section -->
-    <div class="px-20">
+    <div class="md:px-20 px-4">
       <!-- Main -->
       <div>
         <!-- All Engine -->
         <div class="mt-6">
           <!-- Title -->
-          <div class="text-2xl">All Engine</div>
+          <div class="md:text-2xl">All Engine</div>
           <!-- Main -->
           <div class="swiper mySwiper my-4">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper pb-8">
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/03/78/39/0378395d71b7f93c92cc628733f4ca5d.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -115,7 +132,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/d9/6c/53/d96c53963090b2fbd54fd53cfc13c9b6.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -145,7 +166,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/20/69/ff/2069ff8a1b43fe4fc4fd2d5ccf920ac7.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -175,7 +200,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/eb/8d/7a/eb8d7acd6aaea9d4941cc6091d30e6c3.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -205,7 +234,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/c5/85/ef/c585efa259b55e8847e75807798504a3.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -235,67 +268,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
-                <!-- Title and Detials -->
-                <div class="absolute flex flex-col justify-between h-full w-full p-4">
-                  <!-- Title -->
-                  <div class="text-3xl text-white">Audi</div>
-                  <!-- View -->
-                  <div class="flex justify-end">
-                    <a href="/" class="bg-amber-400 p-4 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- One Brand -->
-              <div class="swiper-slide">
-                <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
-                <!-- Title and Detials -->
-                <div class="absolute flex flex-col justify-between h-full w-full p-4">
-                  <!-- Title -->
-                  <div class="text-3xl text-white">Audi</div>
-                  <!-- View -->
-                  <div class="flex justify-end">
-                    <a href="/" class="bg-amber-400 p-4 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- One Brand -->
-              <div class="swiper-slide">
-                <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/43/96/e5/4396e58ffc95dbdf02bd119afc4c7a1b.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -329,14 +306,18 @@
         <!-- All Oil -->
         <div class="mt-6">
           <!-- Title -->
-          <div class="text-2xl">All Oils</div>
+          <div class="md:text-2xl">All Oils</div>
           <!-- Main -->
           <div class="swiper mySwiper my-4">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper pb-8">
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/8f/6f/da/8f6fda80e66fe00633dfd4bf733a5883.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -366,7 +347,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/55/8f/4f/558f4f7ab522b3cdfbd48220c24add37.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -396,7 +381,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/4b/f4/b5/4bf4b5d132b57f65ac1408c6dafd0e29.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -426,7 +415,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/99/5d/1a/995d1aa9868e50cd16cffbfc45fbf79f.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -456,7 +449,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/23/16/f0/2316f01a276908de1dae0c5574b4bf1b.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -486,67 +483,11 @@
               <!-- One Brand -->
               <div class="swiper-slide">
                 <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
-                <!-- Title and Detials -->
-                <div class="absolute flex flex-col justify-between h-full w-full p-4">
-                  <!-- Title -->
-                  <div class="text-3xl text-white">Audi</div>
-                  <!-- View -->
-                  <div class="flex justify-end">
-                    <a href="/" class="bg-amber-400 p-4 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- One Brand -->
-              <div class="swiper-slide">
-                <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
-                <!-- Title and Detials -->
-                <div class="absolute flex flex-col justify-between h-full w-full p-4">
-                  <!-- Title -->
-                  <div class="text-3xl text-white">Audi</div>
-                  <!-- View -->
-                  <div class="flex justify-end">
-                    <a href="/" class="bg-amber-400 p-4 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- One Brand -->
-              <div class="swiper-slide">
-                <!-- Image Background -->
-                <img src="../public/img/brand.jpeg" class="aspect-square" alt="logo" />
+                <img
+                  src="https://i.pinimg.com/736x/2a/8b/ac/2a8bac32aec591f84139bde48e0c94ef.jpg"
+                  class="aspect-square brightness-75"
+                  alt="logo"
+                />
                 <!-- Title and Detials -->
                 <div class="absolute flex flex-col justify-between h-full w-full p-4">
                   <!-- Title -->
@@ -588,17 +529,21 @@
           clickable: true,
         },
         breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
         },
       });

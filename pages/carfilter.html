@@ -33,29 +33,29 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="w-full px-20 z-[10000]">
+    <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
         <a href="../index.html" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
-        <div>
+        <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="../index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Car
               </a>
             </li>
             <li>
-              <a href="./brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Company
               </a>
             </li>
             <li>
-              <a href="./element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
                 Product
               </a>
             </li>
@@ -65,15 +65,29 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Register </a>
+            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Main Section -->
-    <div class="px-20">
+    <div class="md:px-20 px-4">
       <!-- Filters Button -->
-      <div class="grid grid-cols-5 gap-2 mt-16">
+      <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-2 md:mt-16 mt-10">
         <!-- Button Filter -->
         <details class="dropdown">
           <summary class="btn btn-block rounded-none">
@@ -178,7 +192,7 @@
           </ul>
         </details>
 
-        <button class="btn btn-block btn-warning mx-2 font-bold rounded-none flex justify-center gap-4">
+        <button class="btn btn-block btn-warning mx-2 font-bold rounded-md flex justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -193,12 +207,12 @@
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
           </svg>
-          <div>Search</div>
+          <div class="font-bold text-lg">Search</div>
         </button>
       </div>
 
       <!-- Main -->
-      <div class="grid grid-cols-4 gap-4 mt-10">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 mt-10">
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
@@ -207,7 +221,7 @@
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Porsche 2023</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -275,12 +289,16 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/fd/13/4a/fd134ab5b23add149b865b18c2be26b2.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Dodge Charger 2021</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -348,12 +366,16 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/b0/4a/65/b04a6556b3a5d077804e7ed5c3487ce8.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>volkswagen Golf 2023</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -421,12 +443,16 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/4d/5d/22/4d5d22f8c977deda7351e09d417fab32.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Volkswagen jetta 2023</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -494,12 +520,12 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img class="aspect-square object-cover" src="../public/img/sections/nissanqashqi.jpg" alt="image" />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Nissan Qashqi 2023</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -567,12 +593,16 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Toyota Camry 2021</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -640,12 +670,16 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/85/8e/86/858e86b6dbe03658c57a9b3892774ce6.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>volkswagen 2023</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">
@@ -713,12 +747,324 @@
         <!-- Car -->
         <div class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/f7/38/02/f738029797d8f95357cfc2e5a898e4d9.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div>Mercedz benz 2023</div>
+            <div>Nissan Navara 2021</div>
+
+            <!-- List Icon -->
+            <div class="flex justify-between my-4">
+              <!-- Engine -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/engine.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Cylinder -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Kilometer -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">4 Cylinder</div>
+              </div>
+            </div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>$18,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car -->
+        <div class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/27/bf/ce/27bfceb05c03a48dfc2c129f82f457e1.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div>Ford 2022</div>
+
+            <!-- List Icon -->
+            <div class="flex justify-between my-4">
+              <!-- Engine -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/engine.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Cylinder -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Kilometer -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">4 Cylinder</div>
+              </div>
+            </div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>$18,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car -->
+        <div class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/8a/9d/73/8a9d731543fd7754a2e1cfa286e7f36e.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div>Toyota Prado 2016</div>
+
+            <!-- List Icon -->
+            <div class="flex justify-between my-4">
+              <!-- Engine -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/engine.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Cylinder -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Kilometer -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">4 Cylinder</div>
+              </div>
+            </div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>$18,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car -->
+        <div class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/4c/a4/ae/4ca4ae33ac1b607e73014157c53fdeb2.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div>Toyota Land Cruiser2023</div>
+
+            <!-- List Icon -->
+            <div class="flex justify-between my-4">
+              <!-- Engine -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/engine.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Cylinder -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">1,2 Engine</div>
+              </div>
+              <!-- Kilometer -->
+              <div class="flex flex-col items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                </div>
+                <!-- Title -->
+                <div class="text-xs">4 Cylinder</div>
+              </div>
+            </div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>$18,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car -->
+        <div class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="aspect-square object-cover"
+            src="https://i.pinimg.com/736x/e7/80/73/e78073ba08ba8e0f4b559b29bf90e6da.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div>Toyota Corolla 2020</div>
 
             <!-- List Icon -->
             <div class="flex justify-between my-4">

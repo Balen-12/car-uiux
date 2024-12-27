@@ -16,13 +16,13 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="w-full px-20 z-[10000]">
+    <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
         <a href="../index.html" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
-        <div>
+        <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
               <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li>
-              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
                 Product
               </a>
             </li>
@@ -48,45 +48,9 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Register </a>
+            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
           </div>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Fisrt Section -->
-    <div class="relative h-[600px]">
-      <!-- Title and Details -->
-      <div class="absolute left-0 bottom-0 grid grid-cols-4 items-end z-10 p-10">
-        <!-- Blur Section -->
-        <div class="col-span-1 bg-white/20 backdrop-blur p-8">
-          <!-- Title -->
-          <div class="text-5xl my-4 font-bold">Premmium Car Rental</div>
-        </div>
-
-        <!-- Whte Section -->
-        <div class="col-span-1 py-6 px-4 bg-white text-2xl">Best Place</div>
-
-        <!-- Whte Section -->
-        <div class="col-span-1 py-6 px-4 bg-white text-2xl border-x-2 border-gray-300">Include All Products</div>
-
-        <!-- Whte Section -->
-        <div class="col-span-1 py-6 px-4 bg-white text-2xl">Speed Sale</div>
-      </div>
-
-      <!-- Background -->
-      <img class="w-full h-full object-cover z-0" src="./public/img/Porsche Wallpaper.jpg" alt="" srcset="" />
-    </div>
-
-    <!-- Brand Section -->
-    <div class="py-24 px-10">
-      <!-- Title -->
-      <div class="flex justify-between mb-4">
-        <div class="text-3xl mb-4">List Brand Cars</div>
-        <a href="/" class="flex items-center gap-4 mb-4 px-4 hover:bg-amber-200 transition rounded-full">
-          <!-- Title -->
-          <div class="text-xl">See more</div>
-          <!-- Icon -->
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +59,60 @@
               stroke-width="1.5"
               stroke="currentColor"
               class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fisrt Section -->
+    <div class="relative md:h-[600px] h-[300px]">
+      <!-- Title and Details -->
+      <div class="absolute left-0 bottom-0 grid grid-cols-4 items-end z-10 md:p-10">
+        <!-- Blur Section -->
+        <div class="md:col-span-1 col-span-2 bg-white/20 backdrop-blur p-8">
+          <!-- Title -->
+          <div class="md:text-5xl text-3xl my-4 font-bold">Premmium Car Rental</div>
+        </div>
+
+        <!-- Whte Section -->
+        <div class="md:col-span-1 col-span-2 py-6 px-4 bg-white text-2xl">Best Place</div>
+
+        <!-- Whte Section -->
+        <div class="md:block hidden col-span-1 py-6 px-4 bg-white text-2xl border-x-2 border-gray-300">
+          Include All Products
+        </div>
+
+        <!-- Whte Section -->
+        <div class="md:block hidden col-span-1 py-6 px-4 bg-white text-2xl">Speed Sale</div>
+      </div>
+
+      <!-- Background -->
+      <img class="w-full h-full object-cover z-0" src="./public/img/Porsche Wallpaper.jpg" alt="" srcset="" />
+    </div>
+
+    <!-- Brand Section -->
+    <div class="py-24 md:px-10 px-4">
+      <!-- Title -->
+      <div class="flex justify-between mb-4">
+        <div class="md:text-3xl text-xl mb-4">List Cars</div>
+        <a
+          href="/pages/carfilter.html"
+          class="flex items-center md:gap-4 gap-2 mb-4 md:px-4 hover:bg-amber-200 transition rounded-full"
+        >
+          <!-- Title -->
+          <div class="md:text-xl">See more</div>
+          <!-- Icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:size-6 size-4"
             >
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
@@ -105,14 +123,14 @@
       <!-- Main -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <!-- One Brand -->
+          <!-- One Brand BMW -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car2.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/sections/bmw.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">BMW</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -131,14 +149,14 @@
             </div>
           </div>
 
-          <!-- One Brand -->
+          <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car3.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/sections/toyota.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">BMW</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -157,14 +175,14 @@
             </div>
           </div>
 
-          <!-- One Brand -->
+          <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car4.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/sections/merceds.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">Mercedes</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -183,14 +201,14 @@
             </div>
           </div>
 
-          <!-- One Brand -->
+          <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car5.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/sections/mitsubushi.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">Mitsubishi</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -209,14 +227,14 @@
             </div>
           </div>
 
-          <!-- One Brand -->
+          <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car6.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/sections/nissan.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">Nissan</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -235,14 +253,14 @@
             </div>
           </div>
 
-          <!-- One Brand -->
+          <!-- One Brand Porsche -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car5.jpg" class="aspect-square" alt="logo" />
+            <img src="./public/img/swiperBrand/car2.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
-              <div class="text-3xl text-white">Audi</div>
+              <div class="text-3xl text-white">Porsche</div>
               <!-- View -->
               <div class="flex justify-end">
                 <a href="/" class="bg-amber-400 p-4 rounded-full">
@@ -266,11 +284,11 @@
     </div>
 
     <!-- Show Cars -->
-    <div class="relative h-[600px] mb-20">
+    <div class="relative md:h-[600px] h-[300px] mb-20">
       <!-- Details -->
       <div class="absolute top-10 w-full text-white flex justify-center">
         <!-- Title -->
-        <div class="text-5xl">Best Soft Car All Time</div>
+        <div class="md:text-5xl">Best Soft Car All Time</div>
       </div>
 
       <!-- Details -->
@@ -278,21 +296,21 @@
         <!-- Title and Details -->
         <div>
           <!-- Title -->
-          <div class="flex gap-2 mb-4">
-            <div class="text-2xl font-bold">Better Utility</div>
-            <div class="text-2xl font-extralight">Better Utility</div>
+          <div class="flex gap-2 md:mb-4 mb-2">
+            <div class="md:text-2xl text-xs font-bold">Better Utility</div>
+            <div class="md:text-2xl text-xs font-extralight">Better Utility</div>
           </div>
 
           <!-- Title -->
           <div class="flex gap-2">
-            <div class="text-2xl font-bold">With More Prformance</div>
-            <div class="text-2xl font-extralight">With More Prformance</div>
+            <div class="md:text-2xl text-xs font-bold">With More Prformance</div>
+            <div class="md:text-2xl text-xs font-extralight">With More Prformance</div>
           </div>
         </div>
 
         <!-- Order Button -->
         <div>
-          <a href="" class="border-2 py-4 px-8 bg-white/20">Order</a>
+          <a href="" class="border-2 md:py-4 md:px-8 px-2 py-2 bg-white/20 text-xs">Order</a>
         </div>
       </div>
 
@@ -319,7 +337,7 @@
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
         },
       });

@@ -33,29 +33,29 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="w-full px-20 z-[10000]">
+    <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
         <a href="../index.html" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
-        <div>
+        <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="../index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Car
               </a>
             </li>
             <li>
-              <a href="./brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
                 Company
               </a>
             </li>
             <li>
-              <a href="./element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
+              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
                 Product
               </a>
             </li>
@@ -65,16 +65,29 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Register </a>
+            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Main Section -->
-    <div class="px-20">
+    <div class="md:px-20 px-4">
       <!-- Filters Button -->
-      <div class="grid grid-cols-5 gap-2 mt-16">
+      <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-2 md:mt-16 mt-10">
         <!-- Button Filter -->
         <details class="dropdown">
           <summary class="btn btn-block rounded-none">
@@ -179,7 +192,7 @@
           </ul>
         </details>
 
-        <button class="btn btn-block btn-warning mx-2 font-bold rounded-none flex justify-center gap-4">
+        <button class="btn btn-block btn-warning mx-2 font-bold rounded-md flex justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -194,21 +207,25 @@
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
           </svg>
-          <div>Search</div>
+          <div class="font-bold text-lg">Search</div>
         </button>
       </div>
 
       <!-- Main -->
-      <div class="grid grid-cols-4 gap-4 mt-10">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 mt-10">
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="object-cover h-[200px]" src="../public/img/brand.jpeg" alt="image" />
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/9e/92/32/9e9232755e6a4cec528b375975581e13.jpg"
+            alt="image"
+          />
 
           <!-- Details -->
           <div class="p-2">
             <!-- Title -->
-            <div class="truncate">Mercedz benz 2023</div>
+            <div class="truncate">Toyota Motors</div>
 
             <!-- Location and Price -->
             <div class="flex justify-between">
@@ -240,7 +257,329 @@
               <div>8 Car</div>
             </div>
           </div>
-        </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/ef/4d/fe/ef4dfef252fe00c2bf8b5a824122dee5.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Nissan</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/98/be/59/98be59c0c23f0bb6503215e6ac361b04.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Mercedz benz</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/33/a2/db/33a2dbe4cf59ea41bd29f6ee5a9a6717.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Audi Motors</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/1c/b5/63/1cb5630372abf5b516c32ce936180ac7.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Jeep Motors</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/81/e8/f8/81e8f8cf9f02aec1caa1a653a8db3c75.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Hyundai Motor</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/47/13/46/471346c08b7413812c5a25f6b6e3d715.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Honda Motor</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Car -->
+        <a href="./viewBrand.html" class="shadow-md hover:scale-105 transition-all">
+          <!-- Image -->
+          <img
+            class="object-cover h-[200px]"
+            src="https://i.pinimg.com/736x/0f/1d/a8/0f1da895f0ee1e35d5da8d9f6cd36310.jpg"
+            alt="image"
+          />
+
+          <!-- Details -->
+          <div class="p-2">
+            <!-- Title -->
+            <div class="truncate">Land Rover</div>
+
+            <!-- Location and Price -->
+            <div class="flex justify-between">
+              <!-- Location -->
+              <div class="flex items-center gap-1">
+                <!-- Icon -->
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                </div>
+                <!-- Title -->
+                <div class="text-xs">Erbil</div>
+              </div>
+
+              <!-- Price -->
+              <div>8 Car</div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </body>

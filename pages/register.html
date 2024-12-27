@@ -34,12 +34,32 @@
   <body>
     <div class="grid grid-cols-2 justify-center h-screen">
       <!-- Login -->
-      <div class="flex flex-col md:col-span-1 col-span-2 justify-center md:w-[80%] w-[90%] mx-auto p-10">
+      <div class="flex flex-col md:col-span-1 col-span-2 justify-center md:w-[80%] w-[90%] mx-auto p-10 overflow-y-au">
         <!-- Title -->
-        <div class="text-4xl text-center">Sign in</div>
+        <div class="text-4xl text-center">Sign up</div>
 
         <!-- Login -->
         <form>
+          <!-- First name -->
+          <div>
+            <div class="mt-4 mb-2">Fisrt Name</div>
+            <input
+              type="text"
+              class="bg-neutral-200 border-2 border-neutral-100 p-3 w-full rounded-md focus:outline-none focus:border-blue-400 transition duration-300"
+              placeholder="Enter Email"
+            />
+          </div>
+
+          <!-- Last name -->
+          <div>
+            <div class="mt-4 mb-2">Last Name</div>
+            <input
+              type="text"
+              class="bg-neutral-200 border-2 border-neutral-100 p-3 w-full rounded-md focus:outline-none focus:border-blue-400 transition duration-300"
+              placeholder="Enter Email"
+            />
+          </div>
+
           <!-- Email -->
           <div>
             <div class="mt-4 mb-2">Email</div>
@@ -63,13 +83,18 @@
           <!-- Button -->
           <div>
             <button class="bg-amber-300 py-4 my-6 rounded-md hover:bg-amber-500 transition w-full text-center">
-              Sign in
+              Sign up
             </button>
           </div>
 
           <!-- Forget Password -->
           <div>
             <a href="" class="hover:text-gray-400 transition-all">Forget your password?</a>
+          </div>
+
+          <!-- Sign in -->
+          <div class="text-center mt-4">
+            <a href="./login.html" class="hover:text-gray-400 transition-all">Sign in</a>
           </div>
         </form>
       </div>
