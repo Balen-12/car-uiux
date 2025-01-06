@@ -36,7 +36,9 @@
     <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
-        <a href="/" class="rounded-full transition">Logo</a>
+        <a href="/" class="rounded-full transition">
+          <img class="w-20" src="/img/logo/LogoCar.png" alt="logo" />
+        </a>
 
         <!-- Menu -->
         <div class="md:block hidden">
@@ -62,19 +64,43 @@
             <a href="/register" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
           </div>
 
-          <!-- Menu shows in Mobile -->
-          <div class="md:hidden block">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </div>
+          <!-- Menu Open -->
+          <details class="dropdown dropdown-end md:hidden block">
+            <summary class="btn m-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <!-- Home -->
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <!-- Car -->
+              <li>
+                <a href="/cars">Car</a>
+              </li>
+              <!-- Company -->
+              <li>
+                <a href="/company">Company</a>
+              </li>
+              <!-- Product -->
+              <li>
+                <a href="/product">Product</a>
+              </li>
+              <!-- Sign up-->
+              <li>
+                <a href="/register">Sign up</a>
+              </li>
+            </ul>
+          </details>
         </div>
       </div>
     </nav>
@@ -689,6 +715,41 @@
             </div>
           </div>
         </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="flex justify-center gap-[100px] items-center bg-neutral-200 py-[80px] mt-[40px]">
+      <!-- Logo Brand -->
+      <div>
+        <img class="w-[200px]" src="/img/logo/LogoCar.png" alt="" srcset="" />
+      </div>
+
+      <!-- Links -->
+      <div class="flex justify-center gap-[100px]">
+        <!-- Menu -->
+        <div class="flex flex-col gap-3">
+          <!-- Home -->
+          <a href="/">Home</a>
+          <!-- Car -->
+          <a href="/cars">Car</a>
+          <!-- Company -->
+          <a href="/company">Company</a>
+          <!-- Product -->
+          <a href="/product">Product</a>
+          <!-- Sign up-->
+          <a href="/register">Sign up</a>
+        </div>
+
+        <!-- Social -->
+        <div class="flex flex-col gap-3">
+          <!-- Facebook -->
+          <a href="/">Facebook</a>
+          <!-- Instagram-->
+          <a href="/">Instagram</a>
+          <!-- Linkedin -->
+          <a href="/">Linkedin</a>
+        </div>
       </div>
     </div>
   </body>

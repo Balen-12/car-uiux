@@ -31,8 +31,12 @@ app.get('/product', (req, res) => {
   res.sendFile(path.join(__dirname + '/pages/element.html'));
 });
 
-app.get('/product/get-product', (req, res) => {
-  res.sendFile(path.join(__dirname + '/pages/index.html'));
+app.get('/product/get-product/engine', (req, res) => {
+  res.sendFile(path.join(__dirname + '/pages/elementEngine.html'));
+});
+
+app.get('/product/get-product/oil', (req, res) => {
+  res.sendFile(path.join(__dirname + '/pages/elementOil.html'));
 });
 
 // Login
