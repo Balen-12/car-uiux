@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/app.css" />
+    <link rel="stylesheet" href="/css/app.css" />
     <!-- Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -19,28 +19,22 @@
     <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
-        <a href="../index.html" class="rounded-full transition">Logo</a>
+        <a href="/" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
         <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="/" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Car
-              </a>
+              <a href="/cars" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Car </a>
             </li>
             <li>
-              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Company
-              </a>
+              <a href="/company" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Company </a>
             </li>
             <li>
-              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
-                Product
-              </a>
+              <a href="/product" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5"> Product </a>
             </li>
           </ul>
         </div>
@@ -48,10 +42,11 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+            <a href="/register" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
           </div>
 
-          <div>
+          <!-- Menu shows in Mobile -->
+          <div class="md:hidden block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -90,7 +85,7 @@
       </div>
 
       <!-- Background -->
-      <img class="w-full h-full object-cover z-0" src="./public/img/Porsche Wallpaper.jpg" alt="" srcset="" />
+      <img class="w-full h-full object-cover z-0" src="/img/Porsche Wallpaper.jpg" alt="" srcset="" />
     </div>
 
     <!-- Brand Section -->
@@ -126,7 +121,7 @@
           <!-- One Brand BMW -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/sections/bmw.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/sections/bmw.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -152,7 +147,7 @@
           <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/sections/toyota.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/sections/toyota.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -178,7 +173,7 @@
           <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/sections/merceds.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/sections/merceds.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -204,7 +199,7 @@
           <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/sections/mitsubushi.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/sections/mitsubushi.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -230,7 +225,7 @@
           <!-- One Brand Toyota -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/sections/nissan.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/sections/nissan.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -256,7 +251,7 @@
           <!-- One Brand Porsche -->
           <div class="swiper-slide">
             <!-- Image Background -->
-            <img src="./public/img/swiperBrand/car2.jpg" class="aspect-square brightness-50" alt="logo" />
+            <img src="/img/swiperBrand/car2.jpg" class="aspect-square brightness-50" alt="logo" />
             <!-- Title and Detials -->
             <div class="absolute flex flex-col justify-between h-full w-full p-4">
               <!-- Title -->
@@ -315,7 +310,7 @@
       </div>
 
       <!-- Background Image -->
-      <img class="w-full h-full object-cover" src="./public/img/sections/section3.jpg" alt="Section" />
+      <img class="w-full h-full object-cover" src="/img/sections/section3.jpg" alt="Section" />
     </div>
 
     <script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/app.css" />
+    <link rel="stylesheet" href="/css/app.css" />
     <!-- Tailwindcss -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,28 +36,22 @@
     <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
-        <a href="../index.html" class="rounded-full transition">Logo</a>
+        <a href="/" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
         <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="/" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Car
-              </a>
+              <a href="/cars" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Car </a>
             </li>
             <li>
-              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Company
-              </a>
+              <a href="/company" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Company </a>
             </li>
             <li>
-              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
-                Product
-              </a>
+              <a href="/product" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5"> Product </a>
             </li>
           </ul>
         </div>
@@ -65,10 +59,11 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+            <a href="/register" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
           </div>
 
-          <div>
+          <!-- Menu shows in Mobile -->
+          <div class="md:hidden block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -214,9 +209,9 @@
       <!-- Main -->
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 mt-10">
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/swiperBrand/car4.jpg" alt="image" />
+          <img class="aspect-square object-cover" src="/img/swiperBrand/car4.jpg" alt="image" />
 
           <!-- Details -->
           <div class="p-2">
@@ -229,7 +224,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -238,7 +233,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -247,7 +242,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -284,10 +279,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -306,7 +301,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -315,7 +310,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -324,7 +319,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -361,10 +356,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -383,7 +378,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -392,7 +387,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -401,7 +396,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -438,10 +433,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -460,7 +455,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -469,7 +464,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -478,7 +473,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -515,12 +510,12 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
-          <img class="aspect-square object-cover" src="../public/img/sections/nissanqashqi.jpg" alt="image" />
+          <img class="aspect-square object-cover" src="/img/sections/nissanqashqi.jpg" alt="image" />
 
           <!-- Details -->
           <div class="p-2">
@@ -533,7 +528,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -542,7 +537,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -551,7 +546,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -588,10 +583,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -610,7 +605,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -619,7 +614,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -628,7 +623,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -665,10 +660,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -687,7 +682,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -696,7 +691,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -705,7 +700,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -742,10 +737,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -764,7 +759,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -773,7 +768,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -782,7 +777,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -819,10 +814,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -841,7 +836,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -850,7 +845,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -859,7 +854,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -896,10 +891,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -918,7 +913,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -927,7 +922,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -936,7 +931,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -973,10 +968,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -995,7 +990,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -1004,7 +999,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -1013,7 +1008,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -1050,10 +1045,10 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Car -->
-        <div class="shadow-md hover:scale-105 transition-all">
+        <a href="/cars/get-car" class="shadow-md hover:scale-105 transition-all">
           <!-- Image -->
           <img
             class="aspect-square object-cover"
@@ -1072,7 +1067,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/engine.svg" alt="engine" />
+                  <img src="/icon/engine.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -1081,7 +1076,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/cylinder.svg" alt="engine" />
+                  <img src="/icon/cylinder.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">1,2 Engine</div>
@@ -1090,7 +1085,7 @@
               <div class="flex flex-col items-center gap-1">
                 <!-- Icon -->
                 <div>
-                  <img src="../public/icon/kilometer.svg" alt="engine" />
+                  <img src="/icon/kilometer.svg" alt="engine" />
                 </div>
                 <!-- Title -->
                 <div class="text-xs">4 Cylinder</div>
@@ -1127,7 +1122,7 @@
               <div>$18,000</div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </body>

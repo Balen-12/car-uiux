@@ -36,28 +36,22 @@
     <nav class="w-full md:px-20 px-4 z-[10000]">
       <div class="rounded-full w-full flex justify-between items-center py-4">
         <!-- Logo -->
-        <a href="../index.html" class="rounded-full transition">Logo</a>
+        <a href="/" class="rounded-full transition">Logo</a>
 
         <!-- Menu -->
         <div class="md:block hidden">
           <ul class="flex gap-2">
             <li>
-              <a href="./index.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
+              <a href="/" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Home </a>
             </li>
             <li>
-              <a href="./pages/carfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Car
-              </a>
+              <a href="/cars" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Car </a>
             </li>
             <li>
-              <a href="./pages/brandfilter.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href="">
-                Company
-              </a>
+              <a href="/company" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5" href=""> Company </a>
             </li>
             <li>
-              <a href="./pages/element.html" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5">
-                Product
-              </a>
+              <a href="/product" class="rounded-full hover:bg-amber-300 transition px-6 py-2.5"> Product </a>
             </li>
           </ul>
         </div>
@@ -65,10 +59,11 @@
         <!-- Login and Register -->
         <div class="flex items-center gap-4">
           <div>
-            <a href="./pages/register.html" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
+            <a href="/register" class="rounded-full bg-amber-300 transition px-6 py-3"> Sign up </a>
           </div>
 
-          <div>
+          <!-- Menu shows in Mobile -->
+          <div class="md:hidden block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
